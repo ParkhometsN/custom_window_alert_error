@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>windowalert</title>
+</head>
+<body>
+    <center><button id="alert">show alert</button></center>
+
+    <div class="contqaunet">
+        <div class="form">
+            <div class="content">
+                <div class="title"><h5>Error 404</h5></div>
+                <button id="closealert">x</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        const OpenAlert = document.getElementById('alert');
+        const close = document.getElementById('closealert');
+        const CustomAlert = document.querySelector('.contqaunet')
+
+        OpenAlert.addEventListener('click', function(){
+            CustomAlert.style.display = 'block';
+        });
+
+        close.addEventListener('click', function (){
+            CustomAlert.style.display = 'none';
+        });
+        
+    </script>
+</body>
+</html>
