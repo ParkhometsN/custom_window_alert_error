@@ -20,14 +20,14 @@
     <script>
         const OpenAlert = document.getElementById('alert');
         const close = document.getElementById('closealert');
-        const CustomAlert = document.querySelector('.contqaunet')
+        const CustomAlert = document.querySelector('.contqaunet');
 
-        OpenAlert.addEventListener('click', function(){
-            CustomAlert.style.display = 'block';
+        OpenAlert.addEventListener('click', function() {
+            CustomAlert.classList.add('show');
         });
 
-        close.addEventListener('click', function (){
-            CustomAlert.style.display = 'none';
+        close.addEventListener('click', function() {
+            CustomAlert.classList.remove('show');
         });
         
     </script>
